@@ -48,11 +48,117 @@ body{
 }
 
 .building {
-width:80px;
-height:70px;
+width:81px;
+height:71px;
 background:#E00025;
 position:absolute;top:-1px;left:-1px 
 }
+
+.building2 {
+width:82px;
+height:55px;
+background:#E00025;
+position:absolute; top:70px; left:150px;
+}
+
+.building3 {
+width:100px;
+height:168px;
+background:#E00025;
+position:absolute; top:195px; left:500px;z-index: 1;
+}
+
+.building4 {
+width:81px;
+height:55px;
+background:#EB8A1B;
+position:absolute;top:70px;left:-1px 
+}
+
+.building5 {
+width:83px;
+height:126px;
+background:#EB8A1B;
+position:absolute;top:-1px;left:232px 
+}
+
+.building6 {
+width:136px;
+height:126px;
+background:#EB8A1B;
+position:absolute;top:-1px;left:480px 
+}
+
+.building7 {
+width:95px;
+height:126px;
+background:#E00025;
+position:absolute; top:-1px; left:385px;
+}
+
+.building8 {
+width:230px;
+height:126px;
+background:#E00025;
+position:absolute; top:540px; left:385px;
+}
+
+.building9 {
+width:230px;
+height:109px;
+background:#EB8A1B;
+position:absolute;top:433px;left:385px 
+}
+
+.building10 {
+width:165px;
+height:38px;
+background:#EB8A1B;
+position:absolute;top:628px;left:150px 
+}
+
+.building11 {
+width:81px;
+height:136px;
+background:#E00025;
+position:absolute;top:530px;left:-1px 
+}
+
+.building12 {
+width:81px;
+height:97px;
+background:#EB8A1B;
+position:absolute;top:433px;left:-1px 
+}
+
+.building13 {
+width:165px;
+height:117px;
+background:#E00025;
+position:absolute; top:433px; left:150px;
+}
+
+.building14 {
+width:80px;
+height:168px;
+background:#EB8A1B;
+position:absolute; top:195px; left:650px;z-index: 1;
+}
+
+.building15 {
+width:110px;
+height:126px;
+background:#EB8A1B;
+position:absolute;top:-1px;left:782px 
+}
+
+.building16 {
+width:99px;
+height:126px;
+background:#E00025;
+position:absolute; top:-1px; left:683px;
+}
+
 
 .road {
 width:70px;
@@ -61,96 +167,145 @@ background:#000000;
 position:absolute; top:-1px; left:80px;z-index:1;
 }
 
-.dividers {
+.roaddividers {
 width:0px;
 height:656px;
 border-right: 10px dashed yellow; 
 position:absolute; top:px; left:110px; z-index:2;
 }
 
-.dividers2 {
-width:1360px;
-height:0px;
-border-bottom: 10px dashed yellow; 
-position:absolute; top:170px; left:-1px; z-index:2;
-}
-
-.dividers3 {
-width:1360px;
-height:0px;
-border-bottom: 10px dashed yellow; 
-position:absolute; top:392px; left:-1px; z-index:2;
-}
-
-.building2 {
-width:80px;
-height:70px;
-background:#E00025;
-position:absolute; top:70px; left:151px;
-}
-
 .road2 {
 width:1367px;
 height:70px;
 background:#000000;
-position:absolute; top:141px; left:-1px;
+position:absolute; top:125px; left:-1px;
 }
 
-.park {
-width:500px;
-height:150px;
-background:#1B9F0A;
-position:absolute;top:212px;left:-1px;
-}
-
-.park2 {
-width:80px;
-height:70px;
-background:#1B9F0A;
-position:absolute;top:-1px;left:151px;
+.roaddividers2 {
+width:1360px;
+height:0px;
+border-bottom: 10px dashed yellow; 
+position:absolute; top:154px; left:2px; z-index:2;
 }
 
 .road3 {
-width:1367px;
+width:963px;
 height:70px;
 background:#000000;
 position:absolute; top:363px; left:-1px;
 }
 
-.building3 {
-width:100px;
-height:150px;
-background:#E00025;
-position:absolute; top:212px; left:500px;
+.roaddividers3 {
+width:883px;
+height:0px;
+border-bottom: 10px dashed yellow; 
+position:absolute; top:392px; left:-1px; z-index:3;
 }
 
 .road4 {
 width:70px;
 height:667px;
 background:#000000;
-position:absolute; top:-1px; left:300px;z-index:1;
+position:absolute; top:-1px; left:315px;z-index:1;
 }
 
-.dividers4 {
+.roaddividers4 {
 width:0px;
 height:656px;
 border-right: 10px dashed yellow; 
-position:absolute; top:px; left:330px; z-index:2;
+position:absolute; top:10px; left:346px; z-index:2;
 }
 
-.building4 {
-width:80px;
-height:70px;
-background:#4438C8;
-position:absolute;top:70px;left:-1px 
+.road5 {
+width:70px;
+height:233px;
+background:#000000;
+position:absolute; top:433px; left:615px;z-index:1;
 }
 
-.building5 {
-width:67px;
-height:141px;
-background:#4438C8;
-position:absolute;top:-1px;left:232px 
+.roaddividers5 {
+width:0px;
+height:256px;
+border-right: 10px dashed yellow; 
+position:absolute; top:410px; left:645px; z-index:2;
 }
+
+.road6 {
+width:70px;
+height:667px;
+background:#000000;
+position:absolute; top:-1px; left:892px;z-index:2;
+}
+
+.roaddividers6 {
+width:0px;
+height:656px;
+border-right: 10px dashed yellow; 
+position:absolute; top:px; left:923px; z-index:3;
+}
+
+.road7 {
+width:70px;
+height:195px;
+background:#000000;
+position:absolute; top:0px; left:615px;z-index:1;
+}
+
+.roaddividers7 {
+width:0px;
+height:140px;
+border-right: 10px dashed yellow; 
+position:absolute; top:1px; left:647px; z-index:2;
+}
+
+.ocean {
+width:404px;
+height:667px;
+background:#2266bb;
+position:absolute;top:-1px;left:962px;z-index: 2
+}
+
+.ally{
+width:50px;
+height:168px;
+background:#6E6565;
+position:absolute;top:195;left:600px;
+}
+.park {
+width:893px;
+height:168px;
+background:#1B9F0A;
+position:absolute;top:195px;left:-1px;
+}
+
+.park2 {
+width:82px;
+height:71px;
+background:#1B9F0A;
+position:absolute;top:-1px;left:150px;
+}
+
+.park3 {
+width:210;
+height:233;
+background:#1B9F0A;    
+position:absolute;top:433;left:685;
+}
+
+.park4 {
+width:165px;
+height:80px;
+background:#1B9F0A;
+position:absolute;top:550px;left:150px;
+}
+
+.park5 {
+width:90px;
+height:71px;
+background:#1B9F0A;
+position:absolute;top:54px;left:525px;
+}
+
 ::selection {
 	background: transparent; /* Safari */
 	}
