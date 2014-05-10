@@ -11,6 +11,20 @@
     margin-left: -15px;
 }
 
+.zombie2 {
+    width:30px;
+    height:30px;
+    border-radius:30px;
+    line-height:100px;
+    text-align:center;
+    background: url(images/Zombies/animatedZombie.gif);
+    position:absolute; top:30px; right:15px;z-index: 3;
+    visibility: visible;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+
 .human {
     width:25px;
     height:25px;
