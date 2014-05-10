@@ -93,6 +93,32 @@
     
     setInterval(createZombie,1000);     //10,000 milisex = 10 sec
     
+    // CREATING ZOMBIE 2
+     function createZombie2(){
+        var allZombies2 = document.querySelectorAll(".zombie2");
+        if(allZombies2.length<20){
+            var zombie2 = document.createElement('div');
+            zombie2.classList.add('zombie2');
+            document.body.appendChild(zombie2);
+            var xRandomplace2 = Math.random()*max_x;
+            var yRandomplace2 = Math.random()*max_y;
+            zombie2.style.top = xRandomplace2 + 'px';
+            zombie2.style.left = yRandomplace2 + 'px';
+            var zombieInterval2 = setInterval(function(){
+                moveToHuman(zombie2);
+                checkForCollisionsZombies(zombie2);
+                if(!zombie2.parentElement){
+                    clearInterval(zombie2Interval);
+                }
+            },1000/30);  //calculating every 30th of a second //1000 miliseconds = 1 second
+        }   
+            };
+    
+    setInterval(createZombie2,1000);     //10,000 milisex = 10 sec
+    
+    // FINISHED WITH CREATING ZOMBBIE TWO
+    
+    
     function onmousemove(){
         //console.log("moved");
     }
@@ -243,6 +269,61 @@
             
         }
     };
+    
+    // add more zombie 2 stuff
+    removeAll = function(){
+       
+        var allZombies2 = document.querySelectorAll(".zombie2");
+        for(var i = 0; i < allZombies2.length - 1; i++){
+            var zombie2 = allZombies2[i];
+            zombie2.parentElement.removeChild(zombie2);
+        }
+        var allBullets = document.querySelectorAll(".bullet");
+        for(var i = 0; i < allBullets.length - 1; i++){
+            var bullet = allBullets[i];
+            bullet.parentElement.removeChild(bullet);
+        }
+     
+    };
+    
+    moveToHuman2 = function(zombie2){
+        var speed2 = 1;
+        var xHuman2 = parseFloat(human2.style.left);
+        var xZombie2 = parseFloat(zombie2.style.left);
+        var yHuman2 = parseFloat(human2.style.top);
+        var yZombie2 = parseFloat(zombie2.style.top);
+        var xDifference2 = xHuman2 - xZombie2;
+        var yDifference2 = yHuman2 - yZombie2;
+        var distance2 = Math.sqrt(Math.pow(xDifference2, 2) + Math.pow(yDifference2, 2));
+        var xTravel2 = xDifference2/distance2/speed2;
+        var yTravel2 = yDifference2/distance2/speed2;
+        var yAddOn2 = yZombie2 + yTravel2;
+        var xAddOn2 = xZombie2 + xTravel2; 
+        if(distance2<70){
+            
+            zombie2.style.top = yAddOn + 'px';
+            zombie2.style.left = xAddOn + 'px';  
+        }
+        if (distance < playerSize + 15){
+            var restart = prompt('You died. Replay? YES or NO').toUpperCase();
+            
+            if( restart === 'YES'){
+                human.style.top = '300px';
+                human.style.left = '300px';
+                zombie2.parentElement.removeChild(zombie);
+
+                score = 0;
+                document.getElementById("score").value=score;
+                document.getElementById("score").innerHTML=score;
+                removeAll();
+        
+            }
+            
+        }
+    };
+    
+    //FINISH ADDIGN 2nD zombie styfff
+    
     scoreUpdate = function(number){
         score = score + number;
         document.getElementById("score").value=score;
