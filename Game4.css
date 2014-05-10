@@ -33,9 +33,15 @@
     text-align:center;
     background: url(https://cloud.githubusercontent.com/assets/6656104/2935284/52e870e8-d7fe-11e3-93fd-0d6dd0bfac45.png);
     position:absolute; top:50px; right:100px;z-index: 3;
+    visibility: visible;
     margin-top: -15px;
     margin-left: -15px;
-    visibility: visible;
+    border-color:#FFFFFF;
+    border-width:5px;
+    border-style:solid;
+     font-size:20px;
+    color:#33ccff;
+   
 }
 
 .bullet{
